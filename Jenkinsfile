@@ -1,10 +1,10 @@
 pipeline {
-    agent { docker { image 'python:3.13.2-alpine3.21' } }
+    agent any
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
-                sh 'python main.py'
+                bat 'echo "Testing Jenkins Pipeline"'
+                bat 'python --version'
             }
         }
     }
