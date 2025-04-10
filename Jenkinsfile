@@ -5,6 +5,7 @@ pipeline {
             steps {
                 bat 'echo "Testing Jenkins Pipeline"'
                 bat 'python --version'
+                bat 'python main.py'
             }
         }
     }
